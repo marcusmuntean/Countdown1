@@ -13,10 +13,30 @@ const bookList = [
   { title: "Moby Dick", author: "Herman Melville" },
 ];
 
+const addBook = (titleBook, authorBook) =>
+  bookList.push({ title: titleBook, author: authorBook });
+
+const deleteBook = (titleBook, authorBook) => {
+  const index = bookList.indexOf({ title: titleBook, author: authorBook });
+  if (index > -1) {
+    bookList.splice(index, 1);
+  }
+};
+
+const printBooks = () => {
+  bookList.forEach((element) => {
+    console.log(element);
+  });
+};
+
 /* Intermediate Challenge */
 
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
+
+const signCheck = (number) => {
+  return number > 0 ? "Positive" : "Negative";
+};
 
 /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
   the week it is i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
@@ -24,6 +44,14 @@ const bookList = [
 /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
   number from 1 up to that number
   ex. sumUp(7) = 28 */
+
+const numberSum = (number) => {
+  let count = 0;
+  for (i = 0; i <= number; i++) {
+    count += i;
+  }
+  return count;
+};
 
 /* Harder Challenge */
 
