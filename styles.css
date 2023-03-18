@@ -2,6 +2,12 @@ li {
   color: green;
 }
 
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  padding-top: 0%;
+}
+
 #uva {
   color: orange;
   font-size: 25px;
@@ -9,4 +15,6 @@ li {
 
 .introduction {
   font-size: 50px;
+  font-family: cursive;
+  letter-spacing: 10px;
 }
